@@ -9,7 +9,7 @@ Better Themis (hay Curi Judge) là một công cụ chấm bài thi lập trình
 - Yêu cầu: Node JS >= 18.x
 - Trước khi mở, tải thư viện cần thiết
 
-````bash
+```bash
 npm install
 ```
 
@@ -17,6 +17,6 @@ npm install
 
 ```bash
 npm start
-````
+```
 
 ###### Hiện tại thì chỉ mới viết đến đây thôi, do tác giá không biết viết README ...
