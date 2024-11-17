@@ -1,1 +1,904 @@
-{}
+{
+  "kaizisntme": {
+    "EXAMPLE": {
+      "warnings": null,
+      "total_tests": 10,
+      "total_points": 10,
+      "ppt": 1,
+      "icpc": false,
+      "point": 10,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 1
+        }
+      ]
+    },
+    "TCK": {
+      "warnings": null,
+      "total_tests": 100,
+      "total_points": 100,
+      "ppt": 1,
+      "icpc": false,
+      "point": 4.000000000000003,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.06,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.09,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.05,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.07,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.06,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "8 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "56 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "56 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "56 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "20 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "45 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "28 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "56 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "6 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "6 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "15 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "28 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "21 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "36 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "14 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3003 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "45 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "28 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "21 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.07,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "55 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "8 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "6 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "6 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "220 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1716 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3003 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.04,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "9 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "28 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "5005 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "286 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.06,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "286 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "286 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1001 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "28 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.02,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.1,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.11,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "495 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "21 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.13,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "6 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "462 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "8 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "462 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "6 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "6 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.05,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "220 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1716 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 3,
+          "time": 0.03,
+          "point": 0.04
+        }
+      ]
+    }
+  }
+}
