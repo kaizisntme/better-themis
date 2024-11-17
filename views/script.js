@@ -79,6 +79,7 @@ function loadResult(users, tests) {
 }
 
 function reloadAll(users, tests) {
+  tests = tests.map((t) => t.toUpperCase());
   loadTest(users, tests);
   loadUsers(users, tests);
   loadResult(users, tests);

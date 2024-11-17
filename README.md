@@ -4,14 +4,28 @@ Better Themis (hay Curi Judge) là một công cụ chấm bài thi lập trình
 
 ---
 
-# Cách mở phần mêm
+# Cài đặt và sử dụng
 
 - Yêu cầu: Node JS >= 18.x
-- Trước khi mở, tải thư viện cần thiết
 
 ```bash
-npm install
+npm install # Tải thư viện cần thiết
 ```
+
+- Vào file `config.json` để tùy chỉnh một số thư viện ngoài cần thiết (phù hợp với hệ điều hành)
+
+```json
+{
+  "usersdir": "", // Bỏ qua
+  "testdir": "", // Bỏ qua
+  "checkerdir": "D:\\better-themis\\Judge\\libs\\checker.exe", // Cần chỉnh sửa
+  "timedir": "D:\\better-themis\\Judge\\libs\\time64.exe" // Cần chỉnh sửa
+}
+```
+
+- Đối với người dùng Windows, để có `checker`, vui lòng vào thư mục `/Judge/checker` và biên dịch file C++ có sẵn ở trong. Sau khi có file `exe`, copy địa chỉ file và paste vào `checker`
+- Lựa chọn thư viện `time` phù hợp với máy. VD máy Windows x32 thì chọn `time32.exe`, Windows x64 thì chọn `time64.exe` ở trong thư mục `/Judge/libs` và copy địa chỉ file rồi paste vào `time`.
+- Đối với người dùng Ubuntu, ở trong thư mục `Judge/libs` đã có sẵn và paste vào như trên.
 
 - Mở phần mềm
 

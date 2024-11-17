@@ -1,1 +1,6 @@
-{}
+{
+  "usersdir": "",
+  "testdir": "",
+  "checkerdir": "D:\\better-themis\\Judge\\libs\\checker.exe",
+  "timedir": "D:\\better-themis\\Judge\\libs\\time64.exe"
+}

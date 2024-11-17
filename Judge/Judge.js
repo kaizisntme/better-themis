@@ -3,6 +3,8 @@ const path = require("path");
 const pathJoin = path.join;
 const ini = require("ini");
 
+const os = process.platform;
+
 /* GLOBAL CONFIGURATION */
 let TEST_DIR = pathJoin(__dirname, "testcases");
 let CHECKER_DIR = pathJoin(__dirname, "check");
@@ -15,6 +17,7 @@ if (config.checkerdir && fs.existsSync(config.checkerdir))
   CHECKER_DIR = config.checkerdir;
 if (config.usersdir && fs.existsSync(config.usersdir))
   WORKSPACE_DIR = config.usersdir;
+if (config.timedir && fs.existsSync(config.timedir)) LIB_TIME = config.timedir;
 
 const { exec } = require("child_process");
 
@@ -33,10 +36,10 @@ function formatPath(filePath) {
   return currentPath;
 }
 
-path.join = (...args) => {
-  const joinedPath = pathJoin(...args);
-  return formatPath(joinedPath);
-};
+// path.join = (...args) => {
+//   const joinedPath = pathJoin(...args);
+//   return formatPath(joinedPath);
+// };
 
 const RESULT_PATH = path.join(__dirname, "results.json");
 
@@ -113,22 +116,24 @@ class Judge {
   }
 
   compileCode(codeFile) {
+    let cmd = `cd "${
+      this.WORKSPACE
+    }" && g++ "${codeFile}.cpp" -std=c++11 -o "${codeFile}"${
+      os == "win32" ? ".exe" : ""
+    } -O3 -Wall -static`;
     return new Promise((resolve, reject) => {
-      exec(
-        `cd "${this.WORKSPACE}" && g++ "${codeFile}.cpp" -std=c++11 -o "${codeFile}" -O3 -Wall -static`,
-        (error, stdout, stderr) => {
-          resolve({ stderr, CE: error ? true : false });
-        }
-      );
+      exec(cmd, (error, stdout, stderr) => {
+        resolve({ stderr, CE: error ? true : false });
+      });
     });
   }
 
   async executeCode(codeFile, i) {
     const SIG = await new Promise((resolve, reject) => {
       exec(
-        `cd "${this.WORKSPACE}" && ./${codeFile}`,
+        `cd "${this.WORKSPACE}" && "${path.join(this.WORKSPACE, codeFile)}"`,
         {
-          shell: "/bin/bash",
+          shell: os == "win32" ? "cmd.exe" : "/bin/bash",
           timeout:
             parseInt(this.config[this.testNameOf(i)]?.time_limit) ||
             this.TIMEOUT,
@@ -153,13 +158,22 @@ class Judge {
               this.TIMEOUT,
           },
           (error, stdout, stderr) => {
-            const memoryMatch = stderr.match(
-              /Maximum resident set size \(kbytes\): (\d+)/
-            );
-            const timeMatch = stderr.match(/User time \(seconds\): (\d+\.\d+)/);
+            let memregex = /Maximum resident set size \(kbytes\): (\d+)/;
+            let timeregex = /User time \(seconds\): (\d+\.\d+)/;
+            let midx = 1,
+              tidx = 1;
+            if (os == "win32") {
+              memregex = /PeakWorkingSetSize:\s+([\d.]+)\s+(\w+)/;
+              timeregex =
+                /Wall time:\s+(\d+)\s+days,\s+(\d{2}):(\d{2}):([\d.]+)\s+\(([\d.]+)\s+seconds\)/;
+              tidx = 5;
+              midx = 1;
+            }
+            const memoryMatch = stderr.match(memregex);
+            const timeMatch = stderr.match(timeregex);
 
-            const memory = memoryMatch ? parseInt(memoryMatch[1], 10) : null;
-            const time = timeMatch ? parseFloat(timeMatch[1]) : 0;
+            const memory = memoryMatch ? parseInt(memoryMatch[midx], 10) : null;
+            const time = timeMatch ? parseFloat(timeMatch[tidx]) : 0;
             resolve({ memory, time });
           }
         );
