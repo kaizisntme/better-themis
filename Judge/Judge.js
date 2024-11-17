@@ -195,7 +195,7 @@ class Judge {
         else
           resolve({
             status: "Kết quả KHÁC đáp án",
-            feedback: res.splice(2).join(" "),
+            feedback: res,
             status_code: "WA",
           }),
             this.WA++;
