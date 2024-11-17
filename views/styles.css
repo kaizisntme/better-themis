@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 !important;
+}
+
+.container {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-color: #d8e0e9;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #a8c5db;
+  border-radius: 3px;
+  gap: 10px;
+}
+
+.toolbar button {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+  transition: background-color 0.3s;
+  border-radius: .7rem;
+}
+
+.toolbar button:hover {
+  background-color: #e0e0e0;
+}
+
+.toolbar button img {
+  width: 85%;
+  height: 85%;
+  object-fit: cover;
+}
+
+.toolbar .btn-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.table-container {
+  background-color: #e6f0ff;
+  flex: 1;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #b6b6b6 !important;
+  text-align: left;
+}
+
+th {
+  background-color: #bdd6ee;
+  font-weight: normal;
+}
+
+td {
+  height: 40px;
+  background-color: #f7f9fc;
+}
+
+.status-bar {
+  font-size: 14px;
+  color: #666;
+  padding: 5px;
+  font-weight: bold;
+  background-color: #d8e0e9;
+  flex: 0 0 30px;
+}
+
+.target-element,
+.config-element,
+.user-element {
+  cursor: pointer;
+}
+
+.disable {
+  cursor: not-allowed;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 10px;
+  width: 150px;
+}
+
+.menu p {
+  margin: 0;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.menu p:hover {
+  background-color: #eee;
+}
+
+.menu-item-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  background-color: #f0f0f0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+table td:hover {
+  background-color: #f0f0f0;
+}
+
+@media (min-width: 0px) {
+  .container {
+    max-width: 100000000px !important;
+    padding: 0 !important;
+  }
+}
+
+.modal-content {
+  height: 900px;
+  overflow-y: auto;
+}
+
+.warnings {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary div {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.summary div h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.summary div p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.detail-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.detail-table-container table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}

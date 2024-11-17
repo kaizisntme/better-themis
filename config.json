@@ -1,0 +1,10 @@
+{
+  "general": {
+    "multijudge": true
+  },
+  "compiler": {
+    "version": "c++11",
+    "arguments": "",
+    "custom_cmd": false
+  }
+}

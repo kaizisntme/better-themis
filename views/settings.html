@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Better Themis | Cài đặt</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .settings-container {
+      width: 500px;
+      height: 700px;
+      background-color: #a8c5db;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow-y: auto;
+    }
+
+    .settings-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .settings-section {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+    }
+
+    .settings-section:last-child {
+      border-bottom: none;
+    }
+
+    .settings-section h3 {
+      font-size: 18px;
+      margin: 0 0 10px;
+      color: #555;
+    }
+
+    .settings-option {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 8px 0;
+    }
+
+    .settings-option label {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .text-input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 40px;
+      height: 20px;
+    }
+
+    .toggle-switch input {
+      display: none;
+    }
+
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      border-radius: 20px;
+      transition: 0.4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.4s;
+    }
+
+    .toggle-switch input:checked+.slider {
+      background-color: #4caf50;
+    }
+
+    .toggle-switch input:checked+.slider:before {
+      transform: translateX(20px);
+    }
+
+    select {
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 50%;
+    }
+
+    .slider-option input[type="range"] {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="settings-container">
+    <div class="settings-title">Cài đặt</div>
+
+    <div class="settings-section">
+      <h3>Cài đặt chung</h3>
+      <div class="settings-option">
+        <label for="multi-judge">Chấm đồng thời</label>
+        <div class="toggle-switch">
+          <input type="checkbox" id="multi-judge">
+          <span class="slider"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>Trình biên dịch</h3>
+      <div class="settings-option">
+        <label for="version">Phiên bản biên dịch</label>
+        <select id="version">
+          <option value="98">C++ 98</option>
+          <option value="11">C++ 11</option>
+          <option value="14">C++ 14 (khuyên dùng)</option>
+          <option value="17">C++ 17</option>
+        </select>
+      </div>
+      <div class="settings-option">
+        <label for="args">Tham số biên dịch</label>
+        <input type="text" id="args" class="text-input" placeholder="">
+      </div>
+      <div class="settings-option">
+        <label for="custom-cmd">Lệnh biên dịch tùy chỉnh</label>
+        <div class="toggle-switch">
+          <input type="checkbox" id="custom-cmd">
+          <span class="slider"></span>
+        </div>
+      </div>
+      <div class="settings-option">
+        <label for="args">Lệnh biên dịch</label>
+        <input type="text" id="args" class="text-input" placeholder="">
+      </div>
+      <!-- slider -->
+      <!-- <div class="settings-option">
+        <label for="font-size">Font Size</label>
+        <div class="slider-option">
+          <input type="range" id="font-size" min="10" max="30" value="16">
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+</body>
+
+</html>
