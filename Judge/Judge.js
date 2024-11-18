@@ -7,7 +7,7 @@ const os = process.platform;
 
 /* GLOBAL CONFIGURATION */
 let TEST_DIR = pathJoin(__dirname, "testcases");
-let CHECKER_DIR = pathJoin(__dirname, "check");
+let CHECKER_DIR = pathJoin(__dirname, "libs", "check");
 let WORKSPACE_DIR = pathJoin(__dirname, "users");
 let LIB_TIME = pathJoin(__dirname, "libs/time");
 
@@ -36,10 +36,12 @@ function formatPath(filePath) {
   return currentPath;
 }
 
-// path.join = (...args) => {
-//   const joinedPath = pathJoin(...args);
-//   return formatPath(joinedPath);
-// };
+if (os == "linux") {
+  path.join = (...args) => {
+    const joinedPath = pathJoin(...args);
+    return formatPath(joinedPath);
+  };
+}
 
 const RESULT_PATH = path.join(__dirname, "results.json");
 
@@ -55,7 +57,7 @@ function saveResults(
   point,
   details
 ) {
-  TEST_NAME = TEST_NAME.toUpperCase();
+  TEST_NAME = TEST_NAME;
   const results = JSON.parse(fs.readFileSync(RESULT_PATH));
   if (!results[USERNAME]) results[USERNAME] = {};
   if (!results[USERNAME][TEST_NAME]) results[USERNAME][TEST_NAME] = {};
@@ -140,9 +142,14 @@ class Judge {
         },
         (error, stdout, stderr) => {
           if (error) {
+            console.log(JSON.stringify(error));
             resolve({
               error:
-                error.signal == "SIGTERM" ? "TLE" : error.signal || "SIGUNK",
+                error.signal == "SIGTERM"
+                  ? "TLE"
+                  : error.signal || error.code
+                  ? `Exit Code: ${error.code}`
+                  : "SIGUNK",
             });
           } else resolve(false);
         }
@@ -229,56 +236,61 @@ class Judge {
     }
     let results = [],
       point = 0;
-    for (let i = 1; i <= this.TEST_NUM; i++) {
-      update(`Test ${i} - Đang chấm`);
-      const inputPath = path.join(
-        this.testPath,
-        `test${this.zeropad(i)}`,
-        `${this.TEST_NAME}.inp`
-      );
-      const outputPath = path.join(
-        this.testPath,
-        `test${this.zeropad(i)}`,
-        `${this.TEST_NAME}.out`
-      );
-      const input = fs.readFileSync(inputPath);
-      fs.writeFileSync(
-        path.join(this.WORKSPACE, `${this.TEST_NAME}.inp`),
-        input
-      );
-      const exe = await this.executeCode(this.TEST_NAME, i);
-      if (exe.error) {
-        let feedback = {
-          memory: "-",
-          time: "-",
-          point: 0,
-        };
-        if (exe.error == "TLE")
-          (feedback["status"] = "Chạy quá thời gian"),
-            (feedback["feedback"] = ">= 1000ms");
-        else
-          (feedback["status"] = "Chạy sinh lỗi"),
-            (feedback["feedback"] = exe.error);
+    await new Promise(async (resolve, reject) => {
+      for (let i = 1; i <= this.TEST_NUM; i++) {
+        update(`Test ${i} - Đang chấm`);
+        const inputPath = path.join(
+          this.testPath,
+          `test${this.zeropad(i)}`,
+          `${this.TEST_NAME}.inp`
+        );
+        const outputPath = path.join(
+          this.testPath,
+          `test${this.zeropad(i)}`,
+          `${this.TEST_NAME}.out`
+        );
+        const input = fs.readFileSync(inputPath);
+        fs.writeFileSync(
+          path.join(this.WORKSPACE, `${this.TEST_NAME}.inp`),
+          input
+        );
+        const exe = await this.executeCode(this.TEST_NAME, i);
+        if (exe.error) {
+          let feedback = {
+            memory: "-",
+            time: "-",
+            point: 0,
+          };
+          if (exe.error == "TLE")
+            (feedback["status"] = "Chạy quá thời gian"),
+              (feedback["feedback"] = ">= 1000ms");
+          else
+            (feedback["status"] = "Chạy sinh lỗi"),
+              (feedback["feedback"] = exe.error);
+          update(`Test ${i} - Chấm xong`);
+          results.push(feedback);
+          continue;
+        }
+        const { memory, time } = exe;
+        let feedback = await this.check(
+          inputPath,
+          path.join(this.WORKSPACE, `${this.TEST_NAME}.out`),
+          outputPath
+        );
+        feedback["memory"] = memory;
+        feedback["time"] = time;
+        feedback["point"] =
+          feedback.status_code == "AC" && !this.icpc
+            ? parseFloat(this.config[this.testNameOf(i)]?.point) ||
+              this.ppt ||
+              1
+            : 0;
+        point += feedback.point;
         update(`Test ${i} - Chấm xong`);
         results.push(feedback);
-        continue;
       }
-      const { memory, time } = exe;
-      let feedback = await this.check(
-        inputPath,
-        path.join(this.WORKSPACE, `${this.TEST_NAME}.out`),
-        outputPath
-      );
-      feedback["memory"] = memory;
-      feedback["time"] = time;
-      feedback["point"] =
-        feedback.status_code == "AC" && !this.icpc
-          ? parseFloat(this.config[this.testNameOf(i)]?.point) || this.ppt || 1
-          : 0;
-      point += feedback.point;
-      update(`Test ${i} - Chấm xong`);
-      results.push(feedback);
-    }
+      resolve();
+    });
     saveResults(
       warnings,
       this.USERNAME,
@@ -291,7 +303,6 @@ class Judge {
       point,
       results
     );
-    await this.sleep(1000);
     const files = fs.readdirSync(this.WORKSPACE);
     for (const file of files)
       if (

@@ -27,7 +27,7 @@ contextBridge.exposeInMainWorld("api", {
         .readdirSync(testsDir)
         .filter((file) =>
           fs.statSync(path.join(testsDir, file)).isDirectory()
-        ).map(f => f.toUpperCase()) || []
+        ) || []
     );
   },
   getUsers: async () => {
