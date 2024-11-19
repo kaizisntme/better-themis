@@ -68,6 +68,10 @@ contextBridge.exposeInMainWorld("api", {
   },
 });
 
+contextBridge.exposeInMainWorld("events", {
+  onJudge: (callback) => ipcRenderer.on("judge", callback),
+});
+
 function getTestInfo(test) {
   const config = JSON.parse(fs.readFileSync(configPath));
   const testsDir = config.testdir || path.join(defaultPath, "testcases");

@@ -38,7 +38,7 @@ signed main()
     cin >> n >> k;
     for (int i = 1; i <= n; i++)
         cin >> a[i];
-    // sort (a + 1, a + n + 1);
+    // sort(a + 1, a + n + 1);
     if (n == k)
         for (int i = 1; i <= n; i++)
             cout << a[i] << ' ';

@@ -543,3 +543,19 @@ reload();
 setupContextMenu();
 setupContextMenu2();
 setupContextMenu3();
+
+let queue = [];
+
+window.events.onJudge((event, data) => {
+  const { user, test } = data;
+  queue.push(`${user}:${test}`);
+});
+
+setInterval(() => {
+  let top = queue[queue.length - 1];
+  if (inqueue.includes(top)) return;
+  const [user, test] = top.split(":");
+  inqueue.push(top);
+  rejudge(user, test);
+  queue.pop();
+}, 1000);

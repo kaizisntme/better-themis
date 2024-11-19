@@ -1,3 +1,3 @@
-const os = process.platform;
+const md5 = require("md5");
 
-console.log(os)
+console.log(md5("khang"));

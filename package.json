@@ -10,10 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2",
+    "ejs": "^3.1.10",
     "electron": "^33.2.0",
     "fs": "^0.0.1-security",
     "ini": "^5.0.0",
+    "md5": "^2.3.0",
+    "nodemon": "^3.1.7",
     "path": "^0.12.7",
+    "querystring": "^0.2.1",
+    "socket.io": "^4.8.1",
     "xlsx": "^0.18.5"
   },
   "description": ""
