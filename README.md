@@ -45,4 +45,14 @@ npm start
 - Trong thư mực `run`, chạy file `config_accounts.bat` (đối với Windows), hoặc chạy lệnh trong Terminal `sh` hoạc `bash` để run file `config_accounts.*`
 - Đây là giao diện để chỉnh sửa dữ liệu, chỉ cần thao tác trong ứng dụng được mở sau khi chạy lệnh là dữ liệu được lưu.
 
+---
+
+## Báo cáo lỗi/tính năng
+
+- Nếu bạn muốn báo cáo lỗi hay gợi ý tính năng gì, vui lòng vào trang Issue của repo này để mở, tác giả sẽ sớm phản hồi!
+
+---
+
+Đây là một phần trong dự án [Code Curi](https://codecuri.site/), là phiên bản mã nguồn mở, hoạt động trên máy cá nhân, không cần máy chủ!
+
 ###### Hiện tại thì chỉ mới viết đến đây thôi, do tác giá không biết viết README ...
