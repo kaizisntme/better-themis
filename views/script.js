@@ -264,6 +264,7 @@ async function rejudge(user, test, fullTest = false, fullUser = false) {
     ).innerHTML = content;
   });
   inqueue = inqueue.filter((item) => item !== `${user}:${test}`);
+  reload();
   if (fullTest) {
     const users = await window.api.getUsers();
     if (users[users.length - 1] == user)
@@ -274,7 +275,6 @@ async function rejudge(user, test, fullTest = false, fullUser = false) {
     if (tests[tests.length - 1] == test)
       inqueue = inqueue.filter((item) => item !== user);
   }
-  reload();
 }
 
 async function rejudgeAll() {
@@ -552,6 +552,7 @@ window.events.onJudge((event, data) => {
 });
 
 setInterval(() => {
+  if (queue.length == 0) return;
   let top = queue[queue.length - 1];
   if (inqueue.includes(top)) return;
   const [user, test] = top.split(":");

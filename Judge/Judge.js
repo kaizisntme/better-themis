@@ -307,7 +307,8 @@ class Judge {
     for (const file of files)
       if (
         !fs.lstatSync(path.join(this.WORKSPACE, file)).isDirectory() &&
-        !file.toLowerCase().endsWith(".cpp")
+        !file.toLowerCase().endsWith(".cpp") &&
+        file.toLowerCase().startsWith(this.TEST_NAME.toLowerCase())
       )
         fs.unlinkSync(path.join(this.WORKSPACE, file));
     return true;
