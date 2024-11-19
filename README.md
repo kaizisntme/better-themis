@@ -4,7 +4,7 @@ Better Themis (hay Curi Judge) là một công cụ chấm bài thi lập trình
 
 ---
 
-# Cài đặt và sử dụng
+## Cài đặt và sử dụng
 
 - Yêu cầu: Node JS >= 18.x
 
@@ -32,5 +32,17 @@ npm install # Tải thư viện cần thiết
 ```bash
 npm start
 ```
+
+---
+
+# Better Themis & Web interface
+
+- Đây là tính năng tương tự như một số trang `themis-interface` khác ở trên github, phổ biến như [Themis Web Interface](https://github.com/natsukagami/themis-web-interface)
+- Chức năng này sẽ được tự động mở khi chạy Better Themis (hiện tại chưa có chức năng tắt tính năng này, sẽ sớm cập nhật). Link trong local network (kết nối mạng giống nhau, không cần dây mạng LAN): `<ip_server>:3000`, trong đó `<ip_server>` là IP Local Network của máy chủ (máy mở Better Themis)
+
+## Chỉnh sửa dữ liệu tài khoản người dùng
+
+- Trong thư mực `run`, chạy file `config_accounts.bat` (đối với Windows), hoặc chạy lệnh trong Terminal `sh` hoạc `bash` để run file `config_accounts.*`
+- Đây là giao diện để chỉnh sửa dữ liệu, chỉ cần thao tác trong ứng dụng được mở sau khi chạy lệnh là dữ liệu được lưu.
 
 ###### Hiện tại thì chỉ mới viết đến đây thôi, do tác giá không biết viết README ...

@@ -36,9 +36,6 @@ function createWindow() {
 
   // win.setMenu(null);
   win.loadFile("views/index.html");
-  win.once("ready-to-show", () => {
-    win.maximize();
-  });
   settings.setMenu(null);
   settings.loadFile("views/settings.html");
   settings.on("close", (event) => {
@@ -72,6 +69,8 @@ ipcMain.handle("export", async (data) => {
 
 app.whenReady().then(() => {
   createWindow();
+  win.maximize();
+  win.show();
   app.on("activate", function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
   });
