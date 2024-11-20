@@ -5,7 +5,7 @@
   "scripts": {
     "start": "electron .",
     "start_nc": "nohup npm start > output.log 2>&1 &",
-    "w_start_nc": "start /min npm start"
+    "w_start_nc": "npm start &"
   },
   "keywords": [],
   "author": "",

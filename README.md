@@ -36,7 +36,7 @@ npm start
 npm run start_nc
 ```
 
-- Đối với Windows, để mở phần mềm không cần mở Terminal/CMD (hoặc không hiện ra cửa sổ Logs) thì vào thư mục `run > windows` và chạy file `start_noconsole.bat` hoặc chạy lệnh cũng có chức năng tương tự nhưng phải mở Terminal để chạy một lần.
+- Đối với Windows, để mở phần mềm không cần mở Terminal/CMD (hoặc không hiện ra cửa sổ Logs) thì vào thư mục `run > windows` và chạy file `start_noconsole.vbs` hoặc chạy lệnh cũng có chức năng tương tự nhưng phải mở Terminal để chạy một lần.
 
 ```bash
 npm run w_start_nc
