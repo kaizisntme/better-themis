@@ -11,13 +11,19 @@ let CHECKER_DIR = pathJoin(__dirname, "libs", "check");
 let WORKSPACE_DIR = pathJoin(__dirname, "users");
 let LIB_TIME = pathJoin(__dirname, "libs/time");
 
-const config = require("./config.json");
-if (config.testdir && fs.existsSync(config.testdir)) TEST_DIR = config.testdir;
-if (config.checkerdir && fs.existsSync(config.checkerdir))
-  CHECKER_DIR = config.checkerdir;
-if (config.usersdir && fs.existsSync(config.usersdir))
-  WORKSPACE_DIR = config.usersdir;
-if (config.timedir && fs.existsSync(config.timedir)) LIB_TIME = config.timedir;
+function loadConfig() {
+  const config = require("./config.json");
+  if (config.testdir && fs.existsSync(config.testdir))
+    TEST_DIR = config.testdir;
+  if (config.checkerdir && fs.existsSync(config.checkerdir))
+    CHECKER_DIR = config.checkerdir;
+  if (config.usersdir && fs.existsSync(config.usersdir))
+    WORKSPACE_DIR = config.usersdir;
+  if (config.timedir && fs.existsSync(config.timedir))
+    LIB_TIME = config.timedir;
+}
+
+loadConfig();
 
 const { exec } = require("child_process");
 
@@ -381,6 +387,7 @@ class Judge {
 }
 
 async function createJudge(username, problem) {
+  loadConfig();
   const tests = fs.readdirSync(path.join(TEST_DIR, problem));
   let testname = problem;
   if (os == "linux")
