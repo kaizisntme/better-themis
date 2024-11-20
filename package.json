@@ -4,7 +4,8 @@
   "main": "app.js",
   "scripts": {
     "start": "electron .",
-    "start_nc": "nohup npm start > output.log 2>&1 &"
+    "start_nc": "nohup npm start > output.log 2>&1 &",
+    "w_start_nc": "start /min npm start"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +21,7 @@
     "path": "^0.12.7",
     "querystring": "^0.2.1",
     "socket.io": "^4.8.1",
-    "xlsx": "^0.18.5"
+    "xlsx-populate": "^1.21.0"
   },
   "description": ""
 }
