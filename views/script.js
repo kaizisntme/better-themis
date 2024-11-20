@@ -106,7 +106,11 @@ function setupContextMenu() {
       const itemId = element.getAttribute("data-id");
       const [user, test] = itemId.split(":");
       for (let i of ["recheck", "clear"]) {
-        if (inqueue.includes(`${user}:${test}`)) {
+        if (
+          inqueue.includes(`${user}:${test}`) ||
+          inqueue.includes(user) ||
+          inqueue.includes(test)
+        ) {
           if (
             !document.getElementById(i).classList.contains("menu-item-disabled")
           )
@@ -277,6 +281,7 @@ async function rejudgeAll() {
   const tests = await window.api.getTests();
   users.forEach((user) => {
     tests.forEach((test) => {
+      inqueue.push(`${user}:${test}`);
       rejudge(user, test);
     });
   });
