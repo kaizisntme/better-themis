@@ -1,9 +1,7 @@
 async function loadTest(users, tests) {
   const probs = document.getElementById("probs");
-  while (probs.firstChild) probs.removeChild(probs.firstChild);
-  let Users = document.createElement("th");
-  Users.textContent = "Thí sinh";
-  probs.appendChild(Users);
+  let content = "";
+  content += `<th>Thí sinh</th>`;
   const configs = await Promise.all(
     tests.map(async (test) => {
       const info = await window.api.getTestInfo(test);
@@ -12,17 +10,14 @@ async function loadTest(users, tests) {
   );
   tests.forEach((test, idx) => {
     const selected = configs[idx]?.selected ? "✅" : "❌";
-    const th = document.createElement("th");
-    th.textContent = `${selected} ${test}`;
-    th.id = parseString(test);
-    th.classList.add("config-element");
-    th.setAttribute("data-id", parseString(test));
-    th.classList.add(parseString(test).replaceAll(" ", "_"));
-    probs.appendChild(th);
+    content += `<th id="${parseString(
+      test
+    )}" class="config-element ${parseString(test)}" data-id="${parseString(
+      test
+    )}">${selected} ${test}</th>`;
   });
-  let total = document.createElement("th");
-  total.textContent = "Tổng điểm";
-  probs.appendChild(total);
+  content += `<th>Tổng điểm</th>`;
+  probs.innerHTML = content;
   setupContextMenu2();
 }
 
@@ -264,7 +259,6 @@ async function rejudge(user, test, fullTest = false, fullUser = false) {
     ).innerHTML = content;
   });
   inqueue = inqueue.filter((item) => item !== `${user}:${test}`);
-  reload();
   if (fullTest) {
     const users = await window.api.getUsers();
     if (users[users.length - 1] == user)
@@ -275,6 +269,7 @@ async function rejudge(user, test, fullTest = false, fullUser = false) {
     if (tests[tests.length - 1] == test)
       inqueue = inqueue.filter((item) => item !== user);
   }
+  reload();
 }
 
 async function rejudgeAll() {
