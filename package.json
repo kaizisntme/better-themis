@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "start_nc": "nohup npm start > output.log 2>&1 &"
   },
   "keywords": [],
   "author": "",

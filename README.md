@@ -31,7 +31,12 @@ npm install # Tải thư viện cần thiết
 
 ```bash
 npm start
+
+# Đối với Linux, chạy lệnh sau để mở phần mềm không cần duy trì mở Terminal (chạy xong lệnh có thể tắt)
+npm run start_nc
 ```
+
+- Đối với Windows, để mở phần mềm không cần mở Terminal/CMD (hoặc không hiện ra cửa sổ Logs) thì vào thư mục `run > windows` và chạy file `start_noconsole.bat`
 
 ---
 

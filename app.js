@@ -145,7 +145,7 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(200, { "Content-Type": "image/png" });
     res.end(fs.readFileSync(filePath));
   } else if (req.url == "/imgs/logo.png") {
-    const filePath = path.join(__dirname, "web", "logo.png");
+    const filePath = path.join(__dirname, "web", "imgs", "logo.png");
     res.writeHead(200, { "Content-Type": "image/png" });
     res.end(fs.readFileSync(filePath));
   } else if (req.url === "/login" && req.method == "GET") {
