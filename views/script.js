@@ -66,7 +66,7 @@ function loadResult(users, tests) {
       if (data[user] && data[user][test])
         if (!data[user][test].error) ele.textContent = `√ ${point}`;
         else ele.textContent = "ℱ Dịch lỗi";
-      else ele.textContent = "𐄂 Không có bài";
+      //else ele.textContent = "𐄂 Không có bài";
     });
     document.querySelectorAll(`tr#${userId} td#total`)[0].textContent =
       parseFloat(total).toFixed(2);

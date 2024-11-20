@@ -36,10 +36,23 @@ function formatPath(filePath) {
   return currentPath;
 }
 
+let format = (code, test) => code;
+
 if (os == "linux") {
   path.join = (...args) => {
     const joinedPath = pathJoin(...args);
     return formatPath(joinedPath);
+  };
+  format = (code, test) => {
+    let newcode = code.toLowerCase();
+    const idx = newcode.indexOf(`${test.toLowerCase()}.inp`);
+    const odx = newcode.indexOf(`${test.toLowerCase()}.out`);
+    const l = `${test.toLowerCase()}.inp`.length;
+    if (idx != -1)
+      code = code.substring(0, idx) + `${test}.inp` + code.substring(idx + l);
+    if (odx != -1)
+      code = code.substring(0, odx) + `${test}.out` + code.substring(odx + l);
+    return code;
   };
 }
 
@@ -118,6 +131,16 @@ class Judge {
   }
 
   compileCode(codeFile) {
+    let code = fs.readFileSync(
+      `${path.join(this.WORKSPACE, codeFile)}.cpp`,
+      "utf8"
+    );
+    code = format(code, this.TEST_NAME);
+    fs.writeFileSync(
+      `${path.join(this.WORKSPACE, codeFile)}.cpp`,
+      code,
+      "utf8"
+    );
     let cmd = `cd "${
       this.WORKSPACE
     }" && g++ "${codeFile}.cpp" -std=c++11 -o "${codeFile}"${
