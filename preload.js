@@ -1,7 +1,7 @@
 const { contextBridge, ipcRenderer } = require("electron");
 const fs = require("fs");
 const path = require("path");
-const { judge, readConfig } = require("./Judge/Judge");
+const { createJudge, readConfig } = require("./Judge/Judge");
 
 contextBridge.exposeInMainWorld("versions", {
   chrome: process.versions["chrome"],
@@ -149,10 +149,21 @@ contextBridge.exposeInMainWorld("utils", {
   },
 });
 
+const Judges = {};
+
 contextBridge.exposeInMainWorld("judge", {
   judge: async (user, test, update) => {
     const config = getTestInfo(test).config;
     if (!config.selected) return;
-    await judge(user, [test.toLowerCase()], update);
+    const Judge = await createJudge(user, test.toLowerCase(), update);
+    if (!Judge) return;
+    Judges[`${user}:${test}`] = Judge;
+    await Judge.start(update);
+    await update("Đã chấm xong bài");
+  },
+  stop: (user, test, update) => {
+    if (Judges[`${user}:${test}`]) Judges[`${user}:${test}`].stop(update);
+    delete Judges[`${user}:${test}`];
+    update("Đã chấm xong bài");
   },
 });

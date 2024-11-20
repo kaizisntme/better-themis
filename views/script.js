@@ -90,6 +90,14 @@ async function reload() {
 
 let inqueue = [];
 
+function stop(user, test) {
+  window.judge.stop(user, test, function (content) {
+    document.querySelector(
+      `tr#${user.replaceAll(" ", "_")} td#${test.replaceAll(" ", "_")}`
+    ).innerHTML = content;
+  });
+}
+
 function setupContextMenu() {
   const targetElements = document.querySelectorAll(".target-element");
   const customMenu = document.getElementById("custom-menu");
@@ -98,6 +106,12 @@ function setupContextMenu() {
   targetElements.forEach((element) => {
     element.addEventListener("dblclick", function (e) {
       e.preventDefault();
+      if (
+        document
+          .getElementById("detail")
+          .classList.contains("menu-item-disabled")
+      )
+        return;
       const [user, test] = element.getAttribute("data-id").split(":");
       loadDetail(user, test);
     });
@@ -105,7 +119,7 @@ function setupContextMenu() {
       event.preventDefault();
       const itemId = element.getAttribute("data-id");
       const [user, test] = itemId.split(":");
-      for (let i of ["recheck", "clear"]) {
+      for (let i of ["recheck", "clear", "detail"]) {
         if (
           inqueue.includes(`${user}:${test}`) ||
           inqueue.includes(user) ||
@@ -120,6 +134,13 @@ function setupContextMenu() {
         )
           document.getElementById(i).classList.remove("menu-item-disabled");
       }
+      if (
+        inqueue.includes(`${user}:${test}`) ||
+        inqueue.includes(user) ||
+        inqueue.includes(test)
+      ) {
+        document.getElementById("stop").style.display = "block";
+      } else if (!document.getElementById("stop").classList.contains("menu-item-disabled")) document.getElementById("stop").style.display = "none";
       clickedElement = element;
       customMenu.style.display = "block";
       customMenu.style.left = `${event.pageX}px`;
@@ -137,12 +158,17 @@ function setupContextMenu() {
     if (clickedElement) {
       const itemId = clickedElement.getAttribute("data-id"),
         action = event.target.getAttribute("data-action");
-      if (!itemId || !action || inqueue.includes(itemId)) return;
-      const [user, test] = itemId.split(":");
-      if (action == "recheck") inqueue.push(itemId), rejudge(user, test);
-      else if (action == "clear")
-        window.utils.removePoint(user, test), reload();
-      else if (action == "detail") loadDetail(user, test);
+      if (action == "stop") {
+        const [user, test] = itemId.split(":");
+        stop(user, test);
+      } else if (itemId || action || !inqueue.includes(itemId)) {
+        const [user, test] = itemId.split(":");
+        if (action == "recheck") inqueue.push(itemId), rejudge(user, test);
+        else if (action == "clear")
+          window.utils.removePoint(user, test), reload();
+        else if (action == "detail") loadDetail(user, test);
+        else if (action == "stop") stop(user, test);
+      }
       customMenu.style.display = "none";
       clickedElement = null;
     }

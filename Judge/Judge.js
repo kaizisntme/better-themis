@@ -124,6 +124,8 @@ class Judge {
     if (parseInt(config.time_limit)) this.TIMEOUT = parseInt(config.time_limit);
     if (parseInt(config.memory_limit))
       this.MAX_MEMORY = parseInt(config.memory_limit) * 1024 * 1024;
+
+    this.running = true;
   }
 
   zeropad(x) {
@@ -233,12 +235,6 @@ class Judge {
     });
   }
 
-  async sleep(ms) {
-    return new Promise((resolve) => {
-      setTimeout(resolve, ms);
-    });
-  }
-
   testNameOf(i) {
     let testList = [];
     const tests = fs.readdirSync(path.join(TEST_DIR, this.TEST_NAME));
@@ -261,6 +257,7 @@ class Judge {
       point = 0;
     await new Promise(async (resolve, reject) => {
       for (let i = 1; i <= this.TEST_NUM; i++) {
+        if (!this.running) break;
         update(`Test ${i} - Đang chấm`);
         const inputPath = path.join(
           this.testPath,
@@ -336,33 +333,53 @@ class Judge {
         fs.unlinkSync(path.join(this.WORKSPACE, file));
     return true;
   }
-}
 
-async function judge(username, problems, update) {
-  const workspace = path.join(WORKSPACE_DIR, username);
-  const testspace = TEST_DIR;
-  const files = fs.readdirSync(workspace);
-
-  for (const file of files) {
-    if (
-      problems.length > 0 &&
-      !problems.includes(file.toLowerCase().split(".")[0])
-    )
-      continue;
-    if (!file.toLowerCase().endsWith(".cpp")) continue;
-    const testname = file.split(".")[0];
-    const tests = fs.readdirSync(path.join(testspace, testname));
-    let testnum = 0,
-      pad = 1;
-    for (const test of tests) {
-      if (test.toLowerCase().startsWith("test")) testnum++;
-      const splited = test.toLowerCase().split("test")[1];
-      pad = Math.max(splited?.length || 0, pad);
-    }
-    const judge = new Judge(username, testname, testnum, pad);
-    await judge.start(update);
-    await update("Đã chấm xong bài");
+  stop() {
+    this.running = false;
   }
 }
 
-module.exports = { Judge, judge, readConfig };
+async function createJudge(username, problem) {
+  const tests = fs.readdirSync(path.join(TEST_DIR, problem));
+  let testname = problem;
+  if (os == "linux")
+    testname = path.join(TEST_DIR, problem).split(path.sep).pop();
+  if (
+    !fs.existsSync(
+      path.join(path.join(WORKSPACE_DIR, username, `${testname}.cpp`))
+    )
+  )
+    return null;
+  let testnum = 0,
+    pad = 1;
+  for (const test of tests) {
+    if (test.toLowerCase().startsWith("test")) testnum++;
+    const splited = test.toLowerCase().split("test")[1];
+    pad = Math.max(splited?.length || 0, pad);
+  }
+
+  const judge = new Judge(username, testname, testnum, pad);
+  return judge;
+  // for (const file of files) {
+  //   if (
+  //     problems.length > 0 &&
+  //     !problems.includes(file.toLowerCase().split(".")[0])
+  //   )
+  //     continue;
+  //   if (!file.toLowerCase().endsWith(".cpp")) continue;
+  //   const testname = file.split(".")[0];
+  //   const tests = fs.readdirSync(path.join(testspace, testname));
+  //   let testnum = 0,
+  //     pad = 1;
+  //   for (const test of tests) {
+  //     if (test.toLowerCase().startsWith("test")) testnum++;
+  //     const splited = test.toLowerCase().split("test")[1];
+  //     pad = Math.max(splited?.length || 0, pad);
+  //   }
+  //   const judge = new Judge(username, testname, testnum, pad);
+  //   await judge.start(update);
+  //   await update("Đã chấm xong bài");
+  // }
+}
+
+module.exports = { Judge, createJudge, readConfig };

@@ -12,7 +12,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 512,
           "time": 0,
           "point": 1
         },
@@ -20,7 +20,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 1152,
           "time": 0,
           "point": 1
         },
@@ -28,7 +28,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 1024,
           "time": 0,
           "point": 1
         },
@@ -36,7 +36,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 1024,
           "time": 0,
           "point": 1
         },
@@ -44,7 +44,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 1024,
           "time": 0,
           "point": 1
         },
@@ -52,7 +52,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 1024,
           "time": 0,
           "point": 1
         },
@@ -60,7 +60,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 384,
           "time": 0,
           "point": 1
         },
@@ -68,7 +68,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 384,
           "time": 0,
           "point": 1
         },
@@ -76,7 +76,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 384,
           "time": 0,
           "point": 1
         },
@@ -84,7 +84,7 @@
           "status": "Kết quả khớp đáp án",
           "feedback": "1 line(s)",
           "status_code": "AC",
-          "memory": 1408,
+          "memory": 384,
           "time": 0,
           "point": 1
         }
