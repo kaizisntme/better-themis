@@ -36,6 +36,46 @@ function formatPath(filePath) {
   return currentPath;
 }
 
+function plus(a, b) {
+  a = String(a).toString();
+  b = String(b).toString();
+
+  let [int1, frac1] = a.split(".");
+  let [int2, frac2] = b.split(".");
+
+  frac1 = frac1 || "";
+  frac2 = frac2 || "";
+
+  while (frac1.length < frac2.length) frac1 += "0";
+  while (frac2.length < frac1.length) frac2 += "0";
+
+  let carry = 0;
+  let fracResult = "";
+  for (let i = frac1.length - 1; i >= 0; i--) {
+    let sum = parseInt(frac1[i] || "0") + parseInt(frac2[i] || "0") + carry;
+    carry = Math.floor(sum / 10);
+    fracResult = (sum % 10) + fracResult;
+  }
+
+  let intResult = "";
+  let maxLength = Math.max(int1.length, int2.length);
+  int1 = int1.padStart(maxLength, "0");
+  int2 = int2.padStart(maxLength, "0");
+  for (let i = maxLength - 1; i >= 0; i--) {
+    let sum = parseInt(int1[i]) + parseInt(int2[i]) + carry;
+    carry = Math.floor(sum / 10);
+    intResult = (sum % 10) + intResult;
+  }
+
+  if (carry) intResult = carry + intResult;
+
+  let result = intResult;
+  if (fracResult.length > 0) {
+    result += "." + fracResult;
+  }
+  return result;
+}
+
 let format = (code, test) => code;
 
 if (os == "linux") {
@@ -305,7 +345,8 @@ class Judge {
               this.ppt ||
               1
             : 0;
-        point += feedback.point;
+        // point += feedback.point;
+        point = parseFloat(plus(point, feedback.point));
         update(`Test ${i} - Chấm xong`);
         results.push(feedback);
       }
