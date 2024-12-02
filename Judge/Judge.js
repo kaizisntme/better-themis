@@ -84,27 +84,27 @@ function plus(a, b) {
 
 let format = (code, test) => code;
 
-if (os == "linux") {
-  path.join = (...args) => {
-    const joinedPath = pathJoin(...args);
-    return formatPath(joinedPath);
-  };
-  format = (code, test) => {
-    let newcode = code.toLowerCase();
-    const idx = newcode.indexOf(`${test.toLowerCase()}.inp`);
-    const odx = newcode.indexOf(`${test.toLowerCase()}.out`);
-    const l = `${test.toLowerCase()}.inp`.length;
-    if (idx != -1)
-      code = code.substring(0, idx) + `${test}.inp` + code.substring(idx + l);
-    if (odx != -1)
-      code = code.substring(0, odx) + `${test}.out` + code.substring(odx + l);
-    return code;
-  };
-}
+path.join = (...args) => {
+  const joinedPath = pathJoin(...args);
+  return formatPath(joinedPath);
+};
+
+format = (code, test) => {
+  let newcode = code.toLowerCase();
+  const idx = newcode.indexOf(`${test.toLowerCase()}.inp`);
+  const odx = newcode.indexOf(`${test.toLowerCase()}.out`);
+  const l = `${test.toLowerCase()}.inp`.length;
+  if (idx != -1)
+    code = code.substring(0, idx) + `${test}.inp` + code.substring(idx + l);
+  if (odx != -1)
+    code = code.substring(0, odx) + `${test}.out` + code.substring(odx + l);
+  return code;
+};
 
 const RESULT_PATH = path.join(__dirname, "results.json");
 
 function saveResults(
+  cmd,
   warnings,
   USERNAME,
   TEST_NAME,
@@ -130,6 +130,7 @@ function saveResults(
       icpc,
       point: icpc ? (point == total_points ? point : 0) : point,
       details,
+      command: cmd || null,
     };
   fs.writeFileSync(RESULT_PATH, JSON.stringify(results, null, 2), "utf-8");
 }
@@ -158,6 +159,7 @@ class Judge {
     this.CE = 0;
     this.MLE = 0;
     this.OLE = 0;
+    this.compileCommand = "";
 
     this.testPath = path.join(TEST_DIR, testname);
     const config = readConfig(path.join(this.testPath, "config.cfg"));
@@ -170,7 +172,6 @@ class Judge {
     if (parseInt(config.time_limit)) this.TIMEOUT = parseInt(config.time_limit);
     if (parseInt(config.memory_limit))
       this.MAX_MEMORY = parseInt(config.memory_limit) * 1024 * 1024;
-
     this.running = true;
   }
 
@@ -179,21 +180,18 @@ class Judge {
   }
 
   compileCode(codeFile) {
-    let code = fs.readFileSync(
-      `${path.join(this.WORKSPACE, codeFile)}.cpp`,
-      "utf8"
-    );
+    const code_file = path.join(this.WORKSPACE, `${codeFile}.cpp`);
+    let code = fs.readFileSync(`${code_file}`, "utf8");
     code = format(code, this.TEST_NAME);
-    fs.writeFileSync(
-      `${path.join(this.WORKSPACE, codeFile)}.cpp`,
-      code,
-      "utf8"
-    );
-    let cmd = `cd "${
-      this.WORKSPACE
-    }" && g++ "${codeFile}.cpp" -std=c++11 -o "${codeFile}"${
+    fs.writeFileSync(`${code_file}`, code, "utf8");
+    let cmd = `cd ${this.WORKSPACE} ${
+      os == "linux" ? `&& ulimit -s ${this.MAX_MEMORY / 1024}` : ""
+    } && g++ "${code_file}" -std=c++14 -o "${codeFile}"${
       os == "win32" ? ".exe" : ""
-    } -O3 -Wall -static`;
+    } -pipe -O3 -s -static -lm -x c++ ${
+      os == "win32" ? `-Wl,--stack,${this.MAX_MEMORY}` : ""
+    } -Wno-unused-result`;
+    this.compileCommand = cmd;
     return new Promise((resolve, reject) => {
       exec(cmd, (error, stdout, stderr) => {
         resolve({ stderr, CE: error ? true : false });
@@ -202,9 +200,10 @@ class Judge {
   }
 
   async executeCode(codeFile, i) {
+    codeFile = path.join(this.WORKSPACE, codeFile);
     const SIG = await new Promise((resolve, reject) => {
       exec(
-        `cd "${this.WORKSPACE}" && "${path.join(this.WORKSPACE, codeFile)}"`,
+        `cd "${this.WORKSPACE}" && "${codeFile}"`,
         {
           shell: os == "win32" ? "cmd.exe" : "/bin/bash",
           timeout:
@@ -229,7 +228,7 @@ class Judge {
     if (!SIG) {
       return await new Promise((resolve, reject) => {
         exec(
-          `cd "${this.WORKSPACE}" && ${LIB_TIME} -v ./${codeFile}`,
+          `cd "${this.WORKSPACE}" && ${LIB_TIME} -v ${codeFile}`,
           {
             timeout:
               parseInt(this.config[this.testNameOf(i)]?.time_limit) ||
@@ -295,7 +294,13 @@ class Judge {
     let warnings = null;
     if (compile.stderr) warnings = compile.stderr;
     if (compile.CE) {
-      saveResults(null, this.USERNAME, this.TEST_NAME, compile.stderr);
+      saveResults(
+        this.compileCommand,
+        null,
+        this.USERNAME,
+        this.TEST_NAME,
+        compile.stderr
+      );
       update("Dịch lỗi!");
       return false;
     }
@@ -359,6 +364,7 @@ class Judge {
       resolve();
     });
     saveResults(
+      this.compileCommand,
       warnings,
       this.USERNAME,
       this.TEST_NAME,
