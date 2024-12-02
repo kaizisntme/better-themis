@@ -58,7 +58,7 @@ function plus(a, b) {
   let carry = 0;
   let fracResult = "";
   for (let i = frac1.length - 1; i >= 0; i--) {
-    let sum = parseInt(frac1[i] || "0") + parseInt(frac2[i] || "0") + carry;
+    let sum = parseFloat(frac1[i] || "0") + parseFloat(frac2[i] || "0") + carry;
     carry = Math.floor(sum / 10);
     fracResult = (sum % 10) + fracResult;
   }
@@ -68,7 +68,7 @@ function plus(a, b) {
   int1 = int1.padStart(maxLength, "0");
   int2 = int2.padStart(maxLength, "0");
   for (let i = maxLength - 1; i >= 0; i--) {
-    let sum = parseInt(int1[i]) + parseInt(int2[i]) + carry;
+    let sum = parseFloat(int1[i]) + parseFloat(int2[i]) + carry;
     carry = Math.floor(sum / 10);
     intResult = (sum % 10) + intResult;
   }
@@ -120,9 +120,10 @@ function saveResults(
   const results = JSON.parse(fs.readFileSync(RESULT_PATH));
   if (!results[USERNAME]) results[USERNAME] = {};
   if (!results[USERNAME][TEST_NAME]) results[USERNAME][TEST_NAME] = {};
-  if (CE) results[USERNAME][TEST_NAME] = { error: CE };
+  if (CE) results[USERNAME][TEST_NAME] = { command: cmd || null, error: CE };
   else
     results[USERNAME][TEST_NAME] = {
+      command: cmd || null,
       warnings,
       total_tests: TEST_NUM,
       total_points,
@@ -130,7 +131,6 @@ function saveResults(
       icpc,
       point: icpc ? (point == total_points ? point : 0) : point,
       details,
-      command: cmd || null,
     };
   fs.writeFileSync(RESULT_PATH, JSON.stringify(results, null, 2), "utf-8");
 }
@@ -164,14 +164,15 @@ class Judge {
     this.testPath = path.join(TEST_DIR, testname);
     const config = readConfig(path.join(this.testPath, "config.cfg"));
     this.config = config;
-    this.ppt = parseInt(config.point_per_test) || 1;
-    this.total_points = parseInt(config.total_points) || this.TEST_NUM;
+    this.ppt = parseFloat(config.point_per_test) || 1;
+    this.total_points = parseFloat(config.total_points) || this.TEST_NUM;
     this.icpc = config.icpc || false;
     if (config.checker && config.checker != "default")
       this.CHECKER = config.checker;
-    if (parseInt(config.time_limit)) this.TIMEOUT = parseInt(config.time_limit);
-    if (parseInt(config.memory_limit))
-      this.MAX_MEMORY = parseInt(config.memory_limit) * 1024 * 1024;
+    if (parseFloat(config.time_limit))
+      this.TIMEOUT = parseFloat(config.time_limit);
+    if (parseFloat(config.memory_limit))
+      this.MAX_MEMORY = parseFloat(config.memory_limit) * 1024 * 1024;
     this.running = true;
   }
 
@@ -185,7 +186,7 @@ class Judge {
     code = format(code, this.TEST_NAME);
     fs.writeFileSync(`${code_file}`, code, "utf8");
     let cmd = `cd ${this.WORKSPACE} ${
-      os == "linux" ? `&& ulimit -s ${this.MAX_MEMORY / 1024}` : ""
+      os == "linux" ? `&& ulimit -s ${parseInt(this.MAX_MEMORY / 1024)}` : ""
     } && g++ "${code_file}" -std=c++14 -o "${codeFile}"${
       os == "win32" ? ".exe" : ""
     } -pipe -O3 -s -static -lm -x c++ ${
@@ -207,7 +208,7 @@ class Judge {
         {
           shell: os == "win32" ? "cmd.exe" : "/bin/bash",
           timeout:
-            parseInt(this.config[this.testNameOf(i)]?.time_limit) ||
+            parseFloat(this.config[this.testNameOf(i)]?.time_limit) ||
             this.TIMEOUT,
         },
         (error, stdout, stderr) => {
@@ -231,7 +232,7 @@ class Judge {
           `cd "${this.WORKSPACE}" && ${LIB_TIME} -v ${codeFile}`,
           {
             timeout:
-              parseInt(this.config[this.testNameOf(i)]?.time_limit) ||
+              parseFloat(this.config[this.testNameOf(i)]?.time_limit) ||
               this.TIMEOUT,
           },
           (error, stdout, stderr) => {
@@ -249,7 +250,9 @@ class Judge {
             const memoryMatch = stderr.match(memregex);
             const timeMatch = stderr.match(timeregex);
 
-            const memory = memoryMatch ? parseInt(memoryMatch[midx], 10) : null;
+            const memory = memoryMatch
+              ? parseFloat(memoryMatch[midx], 10)
+              : null;
             const time = timeMatch ? parseFloat(timeMatch[tidx]) : 0;
             resolve({ memory, time });
           }
