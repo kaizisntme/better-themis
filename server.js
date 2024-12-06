@@ -153,7 +153,6 @@ module.exports = (defaultPath, configPath, resultPath, win) => {
     const username = req.body.username;
     const filename = file.originalname;
     const content = file.buffer.toString("utf8");
-    console.log(filename, username, content);
     if (!username || !filename || !content)
       return io.emit("submit", { message: "Dữ liệu không hợp lệ!" });
     const config = JSON.parse(fs.readFileSync(configPath));

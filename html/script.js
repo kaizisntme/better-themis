@@ -73,6 +73,27 @@ function loadResult(users, tests) {
   });
 }
 
+function loadUserRes(user, tests) {
+  const data = JSON.parse(window.api.getResult());
+  const userId = parseString(user);
+  let total = 0;
+  tests.forEach((test) => {
+    const testId = parseString(test);
+    const ele = document.querySelectorAll(`tr#${userId} td#${testId}`)[0];
+    if (!data[user] || !data[user][test]) ele.textContent = "";
+    if (ele.textContent.includes("Test")) return;
+    let point = "";
+    if (data[user] && data[user][test]) point = data[user][test].point || "";
+    total += parseFloat(point) || 0;
+    point = parseFloat(point).toFixed(2);
+    if (data[user] && data[user][test])
+      if (!data[user][test].error) ele.textContent = `√ ${point}`;
+      else ele.textContent = "ℱ Dịch lỗi";
+  });
+  document.querySelectorAll(`tr#${userId} td#total`)[0].textContent =
+    parseFloat(total).toFixed(2);
+}
+
 function reloadAll(users, tests) {
   loadTest(users, tests);
   loadUsers(users, tests);
@@ -295,10 +316,13 @@ async function setupContextMenu3() {
 }
 
 async function rejudge(user, test, fullTest = false, fullUser = false) {
+  const ele = document.querySelector(
+    `tr#${user.replaceAll(" ", "_")} td#${test.replaceAll(" ", "_")}`
+  );
+  if (!ele)
+    await loadUsers(await window.api.getUsers(), await window.api.getTests());
   await window.judge.judge(user, test, function (content) {
-    document.querySelector(
-      `tr#${user.replaceAll(" ", "_")} td#${test.replaceAll(" ", "_")}`
-    ).innerHTML = content;
+    ele.innerHTML = content;
   });
   inqueue = inqueue.filter((item) => item !== `${user}:${test}`);
   if (fullTest) {
@@ -311,7 +335,8 @@ async function rejudge(user, test, fullTest = false, fullUser = false) {
     if (tests[tests.length - 1] == test)
       inqueue = inqueue.filter((item) => item !== user);
   }
-  reload();
+  // reload();
+  loadUserRes(user, [test]);
 }
 
 async function rejudgeAll() {
