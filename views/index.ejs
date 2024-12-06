@@ -164,14 +164,12 @@
 
     async function submit() {
       const file = document.getElementById("file").files[0];
-      if (!file) return;
-      const filename = file.name;
-      const buffer = await file.arrayBuffer();
-      const decoder = new TextDecoder('utf-8');
-      socket.emit("submit", {
-        username,
-        filename,
-        content: decoder.decode(buffer)
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("username", username);
+      const response = await fetch("/submit", {
+        method: "POST",
+        body: formData,
       });
     }
   </script>
@@ -186,7 +184,7 @@
 
     socket.on("submit", async (data) => {
       await alert(data.message);
-      window.location.reload();
+      // window.location.reload();
     })
 
     socket.on("result", (data) => result = data);

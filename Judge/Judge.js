@@ -410,6 +410,8 @@ async function createJudge(username, problem) {
   let testnum = 0,
     pad = 1;
   for (const test of tests) {
+    if (!fs.lstatSync(path.join(TEST_DIR, problem, test)).isDirectory())
+      continue;
     if (test.toLowerCase().startsWith("test")) testnum++;
     const splited = test.toLowerCase().split("test")[1];
     pad = Math.max(splited?.length || 0, pad);

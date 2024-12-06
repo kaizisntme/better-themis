@@ -1,1 +1,3385 @@
-{}
+{
+  "quoc": {
+    "sumx": {
+      "command": "cd /home/akhangisntme/judge-interface/Judge/users/quoc && ulimit -s 262144 && g++ \"/home/akhangisntme/judge-interface/Judge/users/quoc/sumx.cpp\" -std=c++14 -o \"sumx\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 1,
+      "total_points": 1,
+      "ppt": 1,
+      "icpc": false,
+      "point": 1,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 666936,
+          "time": 5.7,
+          "point": 1
+        }
+      ]
+    }
+  },
+  "vanminh8a": {
+    "BMARKET": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/vanminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/vanminh8a/BMarket.cpp\" -std=c++14 -o \"BMARKET\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    }
+  },
+  "dangkhoi9b": {
+    "BMARKET": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/dangkhoi9b && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/dangkhoi9b/BMARKET.cpp\" -std=c++14 -o \"BMARKET\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    }
+  },
+  "khang8a": {
+    "BMARKET": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/khang8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/khang8a/BMARKET.cpp\" -std=c++14 -o \"BMARKET\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.01,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    }
+  },
+  "congminh8g": {
+    "BMARKET": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8g && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8g/BMARKET.cpp\" -std=c++14 -o \"BMARKET\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.01,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    }
+  },
+  "congminh8a": {
+    "BMARKET": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/BMarket.cpp\" -std=c++14 -o \"BMARKET\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.01,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    },
+    "knto": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/KNTo.cpp\" -std=c++14 -o \"knto\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 10,
+      "total_points": 10,
+      "ppt": 1,
+      "icpc": false,
+      "point": 10,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.02,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.02,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0.02,
+          "point": 1
+        }
+      ]
+    },
+    "GCDMAX": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/GCDMax.cpp\" -std=c++14 -o \"GCDMAX\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 10,
+      "total_points": 10,
+      "ppt": 1,
+      "icpc": false,
+      "point": 10,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "93 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "7 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "83 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "15 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "45 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "23 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "9 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "24 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "91 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "87 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    },
+    "pass": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/Pass.cpp\" -std=c++14 -o \"pass\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 10,
+      "total_points": 10,
+      "ppt": 1,
+      "icpc": false,
+      "point": 10,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    },
+    "FLOWERS": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/Flowers.cpp\" -std=c++14 -o \"FLOWERS\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 10,
+      "total_points": 10,
+      "ppt": 1,
+      "icpc": false,
+      "point": 10,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    },
+    "TNUM": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/TNum.cpp\" -std=c++14 -o \"TNUM\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 10,
+      "total_points": 10,
+      "ppt": 1,
+      "icpc": false,
+      "point": 10,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 2432,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 2432,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 2432,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 2432,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "106 line(s)",
+          "status_code": "AC",
+          "memory": 2176,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1003 line(s)",
+          "status_code": "AC",
+          "memory": 2176,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "5008 line(s)",
+          "status_code": "AC",
+          "memory": 2176,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "55000 line(s)",
+          "status_code": "AC",
+          "memory": 2432,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "100000 line(s)",
+          "status_code": "AC",
+          "memory": 2432,
+          "time": 0.01,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "100000 line(s)",
+          "status_code": "AC",
+          "memory": 2432,
+          "time": 0.01,
+          "point": 1
+        }
+      ]
+    },
+    "PRIME3": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/Prime3.cpp\" -std=c++14 -o \"PRIME3\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 10,
+      "total_points": 10,
+      "ppt": 1,
+      "icpc": false,
+      "point": 9,
+      "details": [
+        {
+          "memory": "-",
+          "time": "-",
+          "point": 0,
+          "status": "Chạy quá thời gian",
+          "feedback": ">= 1000ms"
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3 line(s)",
+          "status_code": "AC",
+          "memory": 19592,
+          "time": 0.15,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3 line(s)",
+          "status_code": "AC",
+          "memory": 19600,
+          "time": 0.07,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 19596,
+          "time": 0.08,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "7 line(s)",
+          "status_code": "AC",
+          "memory": 19592,
+          "time": 0.09,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "7 line(s)",
+          "status_code": "AC",
+          "memory": 19336,
+          "time": 0.15,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "8 line(s)",
+          "status_code": "AC",
+          "memory": 19600,
+          "time": 0.09,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "417 line(s)",
+          "status_code": "AC",
+          "memory": 19596,
+          "time": 0.08,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "420 line(s)",
+          "status_code": "AC",
+          "memory": 19596,
+          "time": 0.1,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "416 line(s)",
+          "status_code": "AC",
+          "memory": 19592,
+          "time": 0.1,
+          "point": 1
+        }
+      ]
+    },
+    "SPRIME": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/SPrime.cpp\" -std=c++14 -o \"SPRIME\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 10,
+      "total_points": 10,
+      "ppt": 1,
+      "icpc": false,
+      "point": 10,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "9 line(s)",
+          "status_code": "AC",
+          "memory": 11264,
+          "time": 0.07,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "8 line(s)",
+          "status_code": "AC",
+          "memory": 11264,
+          "time": 0.07,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "16 line(s)",
+          "status_code": "AC",
+          "memory": 11264,
+          "time": 0.07,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "7 line(s)",
+          "status_code": "AC",
+          "memory": 11264,
+          "time": 0.08,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 11264,
+          "time": 0.17,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 11008,
+          "time": 0.08,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "70 line(s)",
+          "status_code": "AC",
+          "memory": 11264,
+          "time": 0.09,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "48 line(s)",
+          "status_code": "AC",
+          "memory": 10880,
+          "time": 0.14,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "76 line(s)",
+          "status_code": "AC",
+          "memory": 11136,
+          "time": 0.12,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "78 line(s)",
+          "status_code": "AC",
+          "memory": 11264,
+          "time": 0.08,
+          "point": 1
+        }
+      ]
+    },
+    "SOLVE": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/Solve.cpp\" -std=c++14 -o \"SOLVE\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    },
+    "MINSUM": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/MinSum.cpp\" -std=c++14 -o \"MINSUM\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 18,
+      "details": [
+        {
+          "status": "Kết quả KHÁC đáp án",
+          "feedback": "wrong answer 1st line differ - expected: '3864', found: '5244'",
+          "status_code": "WA",
+          "memory": 1408,
+          "time": 0,
+          "point": 0
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả KHÁC đáp án",
+          "feedback": "wrong answer 1st line differ - expected: '9040728', found: '83871078'",
+          "status_code": "WA",
+          "memory": 1408,
+          "time": 0.01,
+          "point": 0
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    },
+    "uocso": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/UocSo.cpp\" -std=c++14 -o \"uocso\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "4 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "5 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "85 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "84 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "100 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "100 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    },
+    "MINPRO": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/MinPro.cpp\" -std=c++14 -o \"MINPRO\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "7 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "5 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "10 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "32 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "56 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "14 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "72 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "21 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "524 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "729 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "560 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "900 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "235 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "11515 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "3861 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "11250 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "8072 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "17750 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    },
+    "CPRIME": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/Cprime.cpp\" -std=c++14 -o \"CPRIME\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    },
+    "OLYMPIC": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/Olympic.cpp\" -std=c++14 -o \"OLYMPIC\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "21 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "66 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "88 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "18 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "8 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "20 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "18 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "13 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "64 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "11 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "87 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "57 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "28 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "33 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "79363 line(s)",
+          "status_code": "AC",
+          "memory": 8320,
+          "time": 0.04,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "90123 line(s)",
+          "status_code": "AC",
+          "memory": 9216,
+          "time": 0.05,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "77094 line(s)",
+          "status_code": "AC",
+          "memory": 8704,
+          "time": 0.03,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "100000 line(s)",
+          "status_code": "AC",
+          "memory": 9984,
+          "time": 0.05,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "100000 line(s)",
+          "status_code": "AC",
+          "memory": 9984,
+          "time": 0.05,
+          "point": 1
+        }
+      ]
+    },
+    "uocnto": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/UocNTo.cpp\" -std=c++14 -o \"uocnto\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": "/home/akhangisntme/Music/BAINAP/congminh8a/UocNTo.cpp: In function ‘void solve()’:\n/home/akhangisntme/Music/BAINAP/congminh8a/UocNTo.cpp:31:14: warning: iteration 1000006 invokes undefined behavior [-Waggressive-loop-optimizations]\n   31 |         a[i] = a[i - 1];\n      |         ~~~~~^~~~~~~~~~\n/home/akhangisntme/Music/BAINAP/congminh8a/UocNTo.cpp:30:23: note: within this loop\n   30 |     for (int i = 1; i <= N; i++) {\n      |                     ~~^~~~\n",
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "62 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.1,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "65 line(s)",
+          "status_code": "AC",
+          "memory": 17792,
+          "time": 0.05,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "32 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.05,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "63 line(s)",
+          "status_code": "AC",
+          "memory": 17792,
+          "time": 0.09,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "12 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.08,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "12 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.07,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "374 line(s)",
+          "status_code": "AC",
+          "memory": 17920,
+          "time": 0.08,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "864 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.12,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "109 line(s)",
+          "status_code": "AC",
+          "memory": 17792,
+          "time": 0.1,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "865 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.06,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "876 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.07,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "91 line(s)",
+          "status_code": "AC",
+          "memory": 17792,
+          "time": 0.09,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "93025 line(s)",
+          "status_code": "AC",
+          "memory": 17920,
+          "time": 0.13,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "86804 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.11,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "95180 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.08,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "94243 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.09,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "93573 line(s)",
+          "status_code": "AC",
+          "memory": 17792,
+          "time": 0.12,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "96183 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.12,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "100000 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.11,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "100000 line(s)",
+          "status_code": "AC",
+          "memory": 18048,
+          "time": 0.05,
+          "point": 1
+        }
+      ]
+    },
+    "FORAGE": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/congminh8a && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/congminh8a/Forage.cpp\" -std=c++14 -o \"FORAGE\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 60,
+      "total_points": 60,
+      "ppt": 1,
+      "icpc": false,
+      "point": 60,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.04,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.01,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.04,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1280,
+          "time": 0.05,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.04,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.04,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.05,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.03,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.01,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.01,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.02,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "2 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.06,
+          "point": 1
+        }
+      ]
+    }
+  },
+  "kaizisntme": {
+    "BMARKET": {
+      "command": "cd /home/akhangisntme/Music/BAINAP/kaizisntme && ulimit -s 262144 && g++ \"/home/akhangisntme/Music/BAINAP/kaizisntme/BMARKET.cpp\" -std=c++14 -o \"BMARKET\" -pipe -O3 -s -static -lm -x c++  -Wno-unused-result",
+      "warnings": null,
+      "total_tests": 20,
+      "total_points": 20,
+      "ppt": 1,
+      "icpc": false,
+      "point": 20,
+      "details": [
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0.01,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        },
+        {
+          "status": "Kết quả khớp đáp án",
+          "feedback": "1 line(s)",
+          "status_code": "AC",
+          "memory": 1408,
+          "time": 0,
+          "point": 1
+        }
+      ]
+    }
+  }
+}

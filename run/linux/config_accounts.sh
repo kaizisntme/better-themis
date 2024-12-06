@@ -1,1 +1,1 @@
-npx electron code/configaccounts.js
+npx electron ../code/configaccounts.js

@@ -154,7 +154,7 @@ function setupContextMenu() {
     }
   });
 
-  customMenu.addEventListener("click", function (event) {
+  customMenu.addEventListener("click", async function (event) {
     if (clickedElement) {
       const itemId = clickedElement.getAttribute("data-id"),
         action = event.target.getAttribute("data-action");
@@ -163,8 +163,12 @@ function setupContextMenu() {
         stop(user, test);
       } else if (itemId || action || !inqueue.includes(itemId)) {
         const [user, test] = itemId.split(":");
-        if (action == "recheck") inqueue.push(itemId), rejudge(user, test);
-        else if (action == "clear")
+        if (action == "recheck") {
+          inqueue.push(itemId);
+          while (inqueue.length > 7)
+            await new Promise((r) => setTimeout(r, 100));
+          rejudge(user, test);
+        } else if (action == "clear")
           window.utils.removePoint(user, test), reload();
         else if (action == "detail") loadDetail(user, test);
         else if (action == "stop") stop(user, test);
@@ -218,8 +222,12 @@ async function setupContextMenu2() {
       if (action == "recheck") {
         inqueue.push(test);
         for (let user of users)
-          if (!inqueue.includes(`${user}:${test}`))
-            inqueue.push(`${user}:${test}`), rejudge(user, test, true);
+          if (!inqueue.includes(`${user}:${test}`)) {
+            inqueue.push(`${user}:${test}`);
+            while (inqueue.length > 7)
+              await new Promise((r) => setTimeout(r, 100));
+            rejudge(user, test, true);
+          }
       } else if (action == "clear")
         for (let user of users) window.utils.removePoint(user, test), reload();
       else if (action == "config") loadTestConfig(test);
@@ -272,8 +280,12 @@ async function setupContextMenu3() {
       if (action == "recheck") {
         inqueue.push(user);
         for (let test of tests)
-          if (!inqueue.includes(`${user}:${test}`))
-            inqueue.push(`${user}:${test}`), rejudge(user, test, false, true);
+          if (!inqueue.includes(`${user}:${test}`)) {
+            inqueue.push(`${user}:${test}`);
+            while (inqueue.length > 7)
+              await new Promise((r) => setTimeout(r, 100));
+            rejudge(user, test, false, true);
+          }
       } else if (action == "clear")
         for (let test of tests) window.utils.removePoint(user, test), reload();
       customMenu.style.display = "none";
@@ -306,8 +318,9 @@ async function rejudgeAll() {
   const users = await window.api.getUsers();
   const tests = await window.api.getTests();
   users.forEach((user) => {
-    tests.forEach((test) => {
+    tests.forEach(async (test) => {
       inqueue.push(`${user}:${test}`);
+      while (inqueue.length > 7) await new Promise((r) => setTimeout(r, 100));
       rejudge(user, test);
     });
   });
@@ -577,12 +590,13 @@ window.events.onJudge((event, data) => {
   queue.push(`${user}:${test}`);
 });
 
-setInterval(() => {
+setInterval(async () => {
   if (queue.length == 0) return;
   let top = queue[queue.length - 1];
   if (inqueue.includes(top)) return;
   const [user, test] = top.split(":");
   inqueue.push(top);
+  while (inqueue.length > 7) await new Promise((r) => setTimeout(r, 100));
   rejudge(user, test);
   queue.pop();
 }, 1000);
