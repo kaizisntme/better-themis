@@ -1,3 +1,4 @@
+const MAX_SYNC_JUDGE = 3;
 async function loadTest(users, tests) {
   const probs = document.getElementById("probs");
   let content = "";
@@ -83,7 +84,7 @@ function loadUserRes(user, tests) {
     if (!data[user] || !data[user][test]) ele.textContent = "";
     if (ele.textContent.includes("Test")) return;
     let point = "";
-    if (data[user] && data[user][test]) point = data[user][test].point || "";
+    if (data[user] && data[user][test]) point = data[user][test].point || 0;
     total += parseFloat(point) || 0;
     point = parseFloat(point).toFixed(2);
     if (data[user] && data[user][test])
@@ -185,9 +186,9 @@ function setupContextMenu() {
       } else if (itemId || action || !inqueue.includes(itemId)) {
         const [user, test] = itemId.split(":");
         if (action == "recheck") {
-          inqueue.push(itemId);
-          while (inqueue.length > 7)
+          while (inqueue.length > MAX_SYNC_JUDGE)
             await new Promise((r) => setTimeout(r, 100));
+          inqueue.push(itemId);
           rejudge(user, test);
         } else if (action == "clear")
           window.utils.removePoint(user, test), reload();
@@ -241,12 +242,12 @@ async function setupContextMenu2() {
       const test = itemId;
       const users = await window.api.getUsers();
       if (action == "recheck") {
-        inqueue.push(test);
         for (let user of users)
           if (!inqueue.includes(`${user}:${test}`)) {
-            inqueue.push(`${user}:${test}`);
-            while (inqueue.length > 7)
+            while (inqueue.length > MAX_SYNC_JUDGE)
               await new Promise((r) => setTimeout(r, 100));
+            inqueue.push(`${user}:${test}`);
+            if (!inqueue.includes(test)) inqueue.push(test);
             rejudge(user, test, true);
           }
       } else if (action == "clear")
@@ -299,12 +300,12 @@ async function setupContextMenu3() {
       const user = itemId;
       const tests = await window.api.getTests();
       if (action == "recheck") {
-        inqueue.push(user);
         for (let test of tests)
           if (!inqueue.includes(`${user}:${test}`)) {
-            inqueue.push(`${user}:${test}`);
-            while (inqueue.length > 7)
+            while (inqueue.length > MAX_SYNC_JUDGE)
               await new Promise((r) => setTimeout(r, 100));
+            inqueue.push(`${user}:${test}`);
+            if (!inqueue.includes(user)) inqueue.push(user);
             rejudge(user, test, false, true);
           }
       } else if (action == "clear")
@@ -344,8 +345,9 @@ async function rejudgeAll() {
   const tests = await window.api.getTests();
   users.forEach((user) => {
     tests.forEach(async (test) => {
+      while (inqueue.length > MAX_SYNC_JUDGE)
+        await new Promise((r) => setTimeout(r, 100));
       inqueue.push(`${user}:${test}`);
-      while (inqueue.length > 7) await new Promise((r) => setTimeout(r, 100));
       rejudge(user, test);
     });
   });
@@ -620,8 +622,9 @@ setInterval(async () => {
   let top = queue[queue.length - 1];
   if (inqueue.includes(top)) return;
   const [user, test] = top.split(":");
+  while (inqueue.length > MAX_SYNC_JUDGE)
+    await new Promise((r) => setTimeout(r, 100));
   inqueue.push(top);
-  while (inqueue.length > 7) await new Promise((r) => setTimeout(r, 100));
   rejudge(user, test);
   queue.pop();
 }, 1000);

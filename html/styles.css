@@ -79,6 +79,11 @@ td {
   padding: 10px;
   border: 1px solid #b6b6b6 !important;
   text-align: left;
+  min-width: 150px;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis !important;
 }
 
 th {
